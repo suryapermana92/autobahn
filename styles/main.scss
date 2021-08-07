@@ -1,0 +1,102 @@
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+$fa-font-path: "/fonts";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~chartist/dist/scss/chartist.scss";
+
+// styles can be added here
+
+body {
+	font-family: 'sans-serif';
+}
+
+.background {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: linear-gradient(45deg, rgba(184,255,213,1) 19%, rgba(0,255,104,1) 100%);
+
+}
+.container {
+	background-color: white;
+	margin: auto;
+	width: 1000px;
+	padding: 24px;
+	border: 1px solid black ;
+	border-radius: 4px;
+}
+.row{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+}
+.divider-vertical {
+	height: 500px;
+	background-color: black ;
+	width: 1px;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.split-container {
+	flex-direction: column;
+	display: flex;
+	flex: 1;
+}
+.positive {
+	color: green;
+	font-weight: 600;
+
+}
+.negative {
+	color:red;
+	font-weight: 600;
+}
+.tabBar {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	
+	.tabBar-item {
+		// align-items: center;
+	justify-content: center;
+		display: flex;
+		flex: 1;
+		padding: 5px;
+		border: 1px solid black ;
+		
+	}
+	.tabBar-on {
+		background-color: green;
+		color: #FFF;
+		font-weight: bold;
+	}
+	.tabBar-off {
+		background-color: white;
+		color: #000;
+	}
+}
+
+
+#bar-chart{
+	width: 100%;
+	height: 350px;
+	font-family: Lato, Helvetica-Neue, monospace;
+}
+
+#bar-container {
+	position: relative;
+}
+
+.ct-series-a .ct-bar {
+/* Colour of your bars */
+stroke:  #be1e2d;
+stroke-width: 30;
+}
+.ct-series-b .ct-bar {
+/* Colour of your bars */
+stroke:  #00a79d;
+stroke-width: 30;
+}
+
+.ct-label {
+color: grey;
+}
